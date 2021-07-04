@@ -1,0 +1,90 @@
+<resources>
+    <string name="app_name">Gym Management</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">LOGIN</string>
+    <string name="forgot_password">Forgot Password? Click Here!</string>
+    <string name="user_register">New User? Register!</string>
+    <string name="register">REGISTER</string>
+    <string name="set_password">Set Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="already_registered_sign_in">Already Registered? Sign In!</string>
+    <string name="send">SEND</string>
+    <string name="logout">Logout</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_mobile">Enter Mobile No.</string>
+    <string name="date_of_birth">Date of Birth</string>
+    <string name="enter_dob">Enter Date Of Birth</string>
+    <string name="add">ADD</string>
+    <string name="height_in_cm">Height (in cm)</string>
+    <string name="enter_city">Enter City</string>
+    <string name="weight_in_kg">Weight (in kg)</string>
+    <string name="enter_medical_conditions">Enter Medical Conditions</string>
+    <string name="weight_training">Weight Training</string>
+    <string name="locker">Locker</string>
+    <string name="zumba">Zumba</string>
+    <string name="steam_bath">Steam Bath</string>
+    <string name="cardio_training">Cardio Training</string>
+    <string name="personal_trainer">Personal Trainer</string>
+    <string name="profile">Profile</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="fees">Fees</string>
+    <string name="settings">Settings</string>
+    <string name="contact">Contact</string>
+    <string name="gender">Gender</string>
+    <string name="update">UPDATE</string>
+    <string name="core">Core</string>
+    <string name="fee_details">Fee Details</string>
+    <string name="total">Total</string>
+    <string name="welcome">Welcome</string>
+    <string name="change_password">Change Password</string>
+    <string name="change_email">Change Email</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="contact_us">Contact Us :</string>
+    <string name="call_us">Call Us!</string>
+    <string name="mail_us">Mail Us!</string>
+    <string name="whats_app_us">WhatsApp Us!</string>
+    <string name="enter_new_email">Enter New Email</string>
+    <string name="enter_email_again">Enter Email Again</string>
+    <string name="delete">Delete</string>
+    <string name="account_will_be_deleted">Account Will Be Deleted!</string>
+    <string name="this_action_cannot_be_undone">(This Action Cannot Be Undone!)</string>
+    <string name="enter_current_password">Enter Current Password</string>
+    <string name="enter_new_password">Enter New Password</string>
+    <string name="enter_new_password_again">Enter New Password Again</string>
+    <string name="todo">TODO</string>
+    <string name="members">Members</string>
+    <string name="logo">Logo</string>
+    <string name="gallery">Gallery</string>
+    <string name="zzzzz">Zzzzz</string>
+    <string name="timings">Timings</string>
+    <string name="packages">Packages</string>
+    <string name="core_training">Core Training</string>
+    <string name="announcements">News</string>
+    <string name="make_an_announcement">Make an Announcement!</string>
+    <string name="pay">Pay</string>
+
+    <string-array name="gender">
+        <item>Male</item>
+        <item>Female</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="timings">
+        <item>6:00 AM</item>
+        <item>7:00 AM</item>
+        <item>8:00 AM</item>
+        <item>9:00 AM</item>
+        <item>10:00 AM</item>
+        <item>04:00 PM</item>
+        <item>05:00 PM</item>
+        <item>06:00 PM</item>
+        <item>07:00 PM</item>
+        <item>08:00 PM</item>
+    </string-array>
+    <string-array name="packages">
+        <item>Monthly</item>
+        <item>Quarterly</item>
+        <item>Half-Yearly</item>
+        <item>Yearly</item>
+    </string-array>
+</resources>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gym"
+    tools:context=".EditProfileActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_start"
+                android:layout_marginTop="@dimen/card_padding"
+                android:layout_marginEnd="@dimen/card_end"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etUpdateName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginTop="@dimen/view_top"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:inputType="textPersonName"
+                        android:labelFor="@+id/etUpdateName"
+                        android:padding="@dimen/view_padding"
+                        android:text="@string/enter_name"
+                        android:textColor="@color/textColor"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/etUpdateMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:inputType="number"
+                        android:labelFor="@+id/etUpdateMobile"
+                        android:padding="@dimen/view_padding"
+                        android:text="@string/enter_mobile"
+                        android:textColor="@color/textColor"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/etUpdateDateOfBirth"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:inputType="date"
+                        android:labelFor="@+id/etUpdateDateOfBirth"
+                        android:padding="@dimen/view_padding"
+                        android:text="@string/date_of_birth"
+                        android:textColor="@color/textColor"
+                        android:importantForAutofill="no" />
+
+                    <Spinner
+                        android:id="@+id/spUpdateGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:layout_marginBottom="@dimen/view_end"
+                        android:padding="@dimen/view_padding" />
+
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_start"
+                android:layout_marginTop="@dimen/card_top"
+                android:layout_marginEnd="@dimen/card_end"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/etUpdateHeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginTop="@dimen/view_top"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:inputType="number"
+                        android:labelFor="@+id/etUpdateHeight"
+                        android:padding="@dimen/view_padding"
+                        android:text="@string/height_in_cm"
+                        android:textColor="@color/textColor"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/etUpdateWeight"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:inputType="numberDecimal"
+                        android:labelFor="@+id/etUpdateWeight"
+                        android:padding="@dimen/view_padding"
+                        android:text="@string/weight_in_kg"
+                        android:textColor="@color/textColor"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/etUpdateCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:inputType="textCapWords"
+                        android:labelFor="@id/etUpdateCity"
+                        android:padding="@dimen/view_padding"
+                        android:text="@string/enter_city"
+                        android:textColor="@color/textColor"
+                        android:importantForAutofill="no" />
+
+                    <EditText
+                        android:id="@+id/etUpdateMedicalCondition"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:inputType="textCapSentences"
+                        android:labelFor="@+id/etUpdateMedicalCondition"
+                        android:padding="@dimen/view_padding"
+                        android:text="@string/enter_medical_conditions"
+                        android:textColor="@color/textColor"
+                        android:importantForAutofill="no" />
+
+                    <Spinner
+                        android:id="@+id/spUpdateTimings"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:padding="@dimen/view_padding" />
+
+                    <Spinner
+                        android:id="@+id/spUpdatePackage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:layout_marginBottom="@dimen/view_bottom"
+                        android:padding="@dimen/view_padding" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/card_start"
+                android:layout_marginTop="@dimen/card_top"
+                android:layout_marginEnd="@dimen/card_end"
+                android:layout_marginBottom="@dimen/view_bottom"
+                app:cardCornerRadius="@dimen/card_corner_radius"
+                app:cardElevation="@dimen/card_elevation">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/view_top"
+                        android:layout_marginStart="@dimen/view_start"
+                        android:layout_marginEnd="@dimen/view_end"
+                        android:orientation="vertical">
+
+                        <RadioButton
+                            android:id="@+id/rbUpdateWeightTraining"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="onUpdateRadioButtonClicked"
+                            android:text="@string/weight_training"
+                            android:textColor="@color/textColor"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/rbUpdateCardioTraining"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:onClick="onUpdateRadioButtonClicked"
+                            android:text="@string/cardio_training"
+                            android:textColor="@color/textColor"
+                            android:textSize="25sp"
+                            android:textStyle="bold" />
+
+                    </RadioGroup>
+
+                    <CheckBox
+                        android:id="@+id/cbUpdatePersonalTrainer"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/cb_view_start"
+                        android:layout_marginEnd="@dimen/cb_view_end"
+                        android:onClick="onUpdateCheckBoxClicked"
+                        android:text="@string/personal_trainer"
+                        android:textColor="@color/textColor"
+                        android:textSize="25sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbUpdateZumba"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/cb_view_start"
+                        android:layout_marginEnd="@dimen/cb_view_end"
+                        android:gravity="center"
+                        android:onClick="onUpdateCheckBoxClicked"
+                        android:text="@string/zumba"
+                        android:textColor="@color/textColor"
+                        android:textSize="25sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbUpdateLocker"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/cb_view_start"
+                        android:layout_marginEnd="@dimen/cb_view_end"
+                        android:gravity="center"
+                        android:onClick="onUpdateCheckBoxClicked"
+                        android:text="@string/locker"
+                        android:textColor="@color/textColor"
+                        android:textSize="25sp" />
+
+                    <CheckBox
+                        android:id="@+id/cbUpdateSteamBath"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/cb_view_start"
+                        android:layout_marginEnd="@dimen/cb_view_end"
+                        android:gravity="center"
+                        android:onClick="onUpdateCheckBoxClicked"
+                        android:layout_marginBottom="@dimen/view_bottom"
+                        android:text="@string/steam_bath"
+                        android:textColor="@color/textColor"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <Button
+                android:id="@+id/btUpdateProfile"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/view_top"
+                android:layout_marginBottom="@dimen/view_bottom"
+                android:background="@drawable/btn_shape_round"
+                android:text="@string/update" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

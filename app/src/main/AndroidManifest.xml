@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.rohansingh.gymmanagement">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".GalleryActivity"></activity>
+
+        <service
+            android:name=".AnnouncementsService"
+            android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".AnnouncementsActivity" />
+        <activity android:name=".AdminAnnouncementsActivity" />
+        <activity android:name=".AdminProfileActivity" />
+        <activity android:name=".AdminMembersActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".DeleteActivity" />
+        <activity android:name=".ChangeEmailActivity" />
+        <activity android:name=".ChangePasswordActivity" />
+        <activity android:name=".SplashScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".ContactActivity" />
+        <activity android:name=".SettingsActivity" />
+        <activity android:name=".FeesActivity" />
+        <activity android:name=".EditProfileActivity" />
+        <activity android:name=".ViewProfileActivity" />
+        <activity android:name=".AddProfileActivity" />
+        <activity android:name=".ForgotPasswordActivity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".DashboardActivity" />
+        <activity android:name=".LoginActivity" />
+    </application>
+
+</manifest>

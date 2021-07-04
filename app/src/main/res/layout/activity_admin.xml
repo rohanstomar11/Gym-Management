@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_without_logo"
+    tools:context=".AdminActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/card_start"
+        android:layout_marginTop="@dimen/card_top"
+        android:layout_marginEnd="@dimen/card_end"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.55">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvGallery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top"
+                android:layout_marginEnd="@dimen/view_end"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="@dimen/view_padding"
+                android:text="@string/gallery"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdminMembers"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="@dimen/view_padding"
+                android:text="@string/members"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdminTimings"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="@dimen/view_padding"
+                android:text="@string/timings"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdminPackages"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="@dimen/view_padding"
+                android:text="@string/packages"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAdminCore"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="@dimen/view_padding"
+                android:text="@string/core_training"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvAnnouncements"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginEnd="@dimen/view_end"
+                android:layout_marginBottom="@dimen/view_bottom"
+                android:ems="10"
+                android:gravity="center"
+                android:padding="@dimen/view_padding"
+                android:text="@string/announcements"
+                android:textColor="@color/textColor"
+                android:textSize="25sp"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/btAdminLogout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/view_bottom"
+                android:background="@drawable/btn_shape_round"
+                android:text="@string/logout"
+                android:layout_gravity="center"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

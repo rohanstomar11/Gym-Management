@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_gym"
+    tools:context=".ContactActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/card_start"
+        android:layout_marginEnd="@dimen/card_end"
+        app:cardCornerRadius="@dimen/card_corner_radius"
+        app:cardElevation="@dimen/card_elevation"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top"
+                android:layout_marginEnd="@dimen/view_end"
+                android:text="@string/contact_us"
+                android:textColor="@color/textColor"
+                android:textSize="35sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top"
+                android:layout_marginEnd="@dimen/view_end"
+                android:onClick="onCallUs"
+                android:text="@string/call_us"
+                android:textColor="@color/textColor"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top"
+                android:layout_marginEnd="@dimen/view_end"
+                android:onClick="onWhatsAppUs"
+                android:text="@string/whats_app_us"
+                android:textColor="@color/textColor"
+                android:textSize="22sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/view_start"
+                android:layout_marginTop="@dimen/view_top"
+                android:layout_marginEnd="@dimen/view_end"
+                android:layout_marginBottom="@dimen/view_bottom"
+                android:onClick="onMailUs"
+                android:text="@string/mail_us"
+                android:textColor="@color/textColor"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

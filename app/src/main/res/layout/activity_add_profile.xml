@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gym">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/card_padding"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_start"
+            android:layout_marginTop="@dimen/card_top"
+            android:layout_marginEnd="@dimen/card_end"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/ivProfilePic"
+                    android:layout_width="@dimen/image_width"
+                    android:layout_height="@dimen/image_height"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/view_padding"
+                    android:src="@drawable/profile_pic"
+                    app:civ_border_color="@color/colorAccent"
+                    app:civ_border_width="@dimen/image_border_width" />
+
+                <EditText
+                    android:id="@+id/etAddName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginTop="@dimen/view_top"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:drawableStart="@drawable/ic_name"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="@string/enter_name"
+                    android:inputType="textPersonName"
+                    android:padding="@dimen/view_padding"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorAccent"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/etAddMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:drawableStart="@drawable/ic_mobile"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="@string/enter_mobile"
+                    android:inputType="number"
+                    android:padding="@dimen/view_padding"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorAccent"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/etAddDateOfBirth"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:drawableStart="@drawable/ic_dob"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:ems="10"
+                    android:hint="@string/enter_dob"
+                    android:inputType="date"
+                    android:padding="@dimen/view_padding"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorAccent"
+                    android:importantForAutofill="no" />
+
+                <Spinner
+                    android:id="@+id/spGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:layout_marginBottom="@dimen/view_end"
+                    android:padding="@dimen/view_padding" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_start"
+            android:layout_marginTop="@dimen/card_top"
+            android:layout_marginEnd="@dimen/card_end"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etHeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginTop="@dimen/view_top"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:drawableStart="@drawable/ic_height"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="@string/height_in_cm"
+                    android:importantForAutofill="no"
+                    android:inputType="number"
+                    android:padding="@dimen/view_padding"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/etWeight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:drawableStart="@drawable/ic_weight"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="@string/weight_in_kg"
+                    android:importantForAutofill="no"
+                    android:inputType="numberDecimal"
+                    android:padding="@dimen/view_padding"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorAccent" />
+
+                <EditText
+                    android:id="@+id/etCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:drawableStart="@drawable/ic_city"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="@string/enter_city"
+                    android:inputType="textCapWords"
+                    android:padding="@dimen/view_padding"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorAccent"
+                    android:importantForAutofill="no" />
+
+                <EditText
+                    android:id="@+id/etMedicalCondition"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:drawableStart="@drawable/ic_medical_records"
+                    android:drawablePadding="@dimen/drawable_padding"
+                    android:hint="@string/enter_medical_conditions"
+                    android:importantForAutofill="no"
+                    android:inputType="textCapSentences"
+                    android:padding="@dimen/view_padding"
+                    android:textColor="@color/textColor"
+                    android:textColorHint="@color/colorAccent" />
+
+                <Spinner
+                    android:id="@+id/spTimings"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:padding="@dimen/view_padding" />
+
+                <Spinner
+                    android:id="@+id/spPackage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:layout_marginBottom="@dimen/view_bottom"
+                    android:padding="@dimen/view_padding" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/card_start"
+            android:layout_marginTop="@dimen/card_top"
+            android:layout_marginEnd="@dimen/card_end"
+            app:cardCornerRadius="@dimen/card_corner_radius"
+            app:cardElevation="@dimen/card_elevation">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RadioGroup
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/view_top"
+                    android:layout_marginStart="@dimen/view_start"
+                    android:layout_marginEnd="@dimen/view_end"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/rbWeightTraining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/weight_training"
+                        android:textColor="@color/textColor"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/rbCardioTraining"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:onClick="onRadioButtonClicked"
+                        android:text="@string/cardio_training"
+                        android:textColor="@color/textColor"
+                        android:textSize="25sp"
+                        android:textStyle="bold" />
+
+                </RadioGroup>
+
+                <CheckBox
+                    android:id="@+id/cbPersonalTrainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/cb_view_start"
+                    android:layout_marginEnd="@dimen/cb_view_end"
+                    android:onClick="onCheckBoxClicked"
+                    android:text="@string/personal_trainer"
+                    android:textColor="@color/textColor"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbZumba"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/cb_view_start"
+                    android:layout_marginEnd="@dimen/cb_view_end"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClicked"
+                    android:text="@string/zumba"
+                    android:textColor="@color/textColor"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbLocker"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/cb_view_start"
+                    android:layout_marginEnd="@dimen/cb_view_end"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClicked"
+                    android:text="@string/locker"
+                    android:textColor="@color/textColor"
+                    android:textSize="25sp" />
+
+                <CheckBox
+                    android:id="@+id/cbSteamBath"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/cb_view_start"
+                    android:layout_marginEnd="@dimen/cb_view_end"
+                    android:gravity="center"
+                    android:onClick="onCheckBoxClicked"
+                    android:layout_marginBottom="@dimen/view_bottom"
+                    android:text="@string/steam_bath"
+                    android:textColor="@color/textColor"
+                    android:textSize="25sp" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btAddProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/view_top"
+            android:layout_marginBottom="@dimen/view_bottom"
+            android:background="@drawable/btn_shape_round"
+            android:text="@string/add" />
+
+    </LinearLayout>
+
+</ScrollView>
