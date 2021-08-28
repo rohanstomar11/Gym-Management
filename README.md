@@ -7,4 +7,4 @@ Gym Management Android App
 •	Automated fees calculation with payment integration for a hassle-free payment experience - Razorpay<br>
 •	Easy communication between admin and members using cloud messaging.
 
-[Download](https://github.com/rohanstomar11/Gym-Management.git) on Android.
+[Download](https://github.com/rohanstomar11/Gym-Management/blob/master/Gym-Management.apk) on Android.
